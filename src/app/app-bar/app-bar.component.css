@@ -1,0 +1,24 @@
+.app-bar {
+    background-color: #223dd7;
+    padding: 10px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-item.active a {
+    color: rgb(255, 111, 0); /* Change the color to your desired value */
+  }
+  
