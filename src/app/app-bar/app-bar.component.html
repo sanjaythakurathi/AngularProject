@@ -1,11 +1,49 @@
 <nav class="app-bar">
-    <ul class="nav-list">
-      <li class="nav-item" [class.active]="activeMenuItem === 'home'"><a routerLink="/home">Home</a></li>
-      <li class="nav-item" [class.active]="activeMenuItem === 'about'"><a routerLink="/about">About Us</a></li>
-      <li class="nav-item" [class.active]="activeMenuItem === 'services'"><a routerLink="/services">Services</a></li>
-      <li class="nav-item" [class.active]="activeMenuItem === 'portfolio'"><a routerLink="/portfolio">Portfolio</a></li>
-      <li class="nav-item" [class.active]="activeMenuItem === 'contact'"><a routerLink="/contact">Contact</a></li>
-      <li class="nav-item" [class.active]="activeMenuItem === 'hierarchy'"><a routerLink="/hierarchy">Hierarchy</a></li>
+ 
+  <ul class="nav-list">
+    <li class="nav-item" [class.active]="activeMenuItem === 'home'">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item" [class.active]="activeMenuItem === 'about'">
+      <a routerLink="/about" routerLinkActive="active">About Us</a>
+    </li>
+    <li class="nav-item" [class.active]="activeMenuItem === 'services'">
+      <a routerLink="/services" routerLinkActive="active">Services</a>
+    </li>
+    <li class="nav-item" [class.active]="activeMenuItem === 'portfolio'">
+      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+    </li>
+    <li class="nav-item" [class.active]="activeMenuItem === 'contact'">
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </li>
+    <li class="nav-item hierarchy-item" [class.active]="activeMenuItem === 'hierarchy'">
+      <a routerLink="/hierarchy" routerLinkActive="active">
+        Hierarchy
+         
+      </a>
+    </li>
+
+   
+ 
+<p-sidebar [(visible)]="isDrawerOpen">
+  <h3>Sidebar</h3>
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+</p-sidebar>
+<p-button (click)="toggle()" icon="pi pi-arrow-right"></p-button>
+    
+ 
+  </ul>
+  <div class="toggle-button">
+    <button class="p-button p-splitbutton" (click)="toggle()">
+      <i class="fas fa-arrow-right"></i>
+    </button>
+    <ul class="dropdown-menu" *ngIf="isDrawerOpen">
+      <!-- Dropdown menu items... -->
     </ul>
-  </nav>
-  
+  </div>
+  <i class="fas fa-arrow-right" (click)="toggle()"></i>
+</nav>
+

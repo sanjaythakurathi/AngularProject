@@ -19,6 +19,9 @@
   }
   
   .nav-item.active a {
-    color: rgb(255, 111, 0); /* Change the color to your desired value */
+    color: rgb(255, 111, 0);  
+  }
+  .drawer-icon {
+    color: rgb(255, 255, 255);
   }
   
