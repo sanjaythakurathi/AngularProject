@@ -1,0 +1,101 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?7e7b2bdb28f63c00e7fafd83fb89fed9") format("truetype"),
+url("./flaticon.woff?7e7b2bdb28f63c00e7fafd83fb89fed9") format("woff"),
+url("./flaticon.woff2?7e7b2bdb28f63c00e7fafd83fb89fed9") format("woff2"),
+url("./flaticon.eot?7e7b2bdb28f63c00e7fafd83fb89fed9#iefix") format("embedded-opentype"),
+url("./flaticon.svg?7e7b2bdb28f63c00e7fafd83fb89fed9#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "phone-call": "\f101",
+    "map-pointer": "\f102",
+    "cancel": "\f103",
+    "24-hours-support": "\f104",
+    "project-plan": "\f105",
+    "content": "\f106",
+    "business": "\f107",
+    "gear": "\f108",
+    "database": "\f109",
+    "information-desk": "\f10a",
+    "question": "\f10b",
+    "application": "\f10c",
+    "right": "\f10d",
+    "target": "\f10e",
+    "chart": "\f10f",
+    "clipboard": "\f110",
+    "value": "\f111",
+    "idea": "\f112",
+    "software": "\f113",
+);
+
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-map-pointer:before {
+    content: map-get($flaticon-map, "map-pointer");
+}
+.flaticon-cancel:before {
+    content: map-get($flaticon-map, "cancel");
+}
+.flaticon-24-hours-support:before {
+    content: map-get($flaticon-map, "24-hours-support");
+}
+.flaticon-project-plan:before {
+    content: map-get($flaticon-map, "project-plan");
+}
+.flaticon-content:before {
+    content: map-get($flaticon-map, "content");
+}
+.flaticon-business:before {
+    content: map-get($flaticon-map, "business");
+}
+.flaticon-gear:before {
+    content: map-get($flaticon-map, "gear");
+}
+.flaticon-database:before {
+    content: map-get($flaticon-map, "database");
+}
+.flaticon-information-desk:before {
+    content: map-get($flaticon-map, "information-desk");
+}
+.flaticon-question:before {
+    content: map-get($flaticon-map, "question");
+}
+.flaticon-application:before {
+    content: map-get($flaticon-map, "application");
+}
+.flaticon-right:before {
+    content: map-get($flaticon-map, "right");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-chart:before {
+    content: map-get($flaticon-map, "chart");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon-map, "clipboard");
+}
+.flaticon-value:before {
+    content: map-get($flaticon-map, "value");
+}
+.flaticon-idea:before {
+    content: map-get($flaticon-map, "idea");
+}
+.flaticon-software:before {
+    content: map-get($flaticon-map, "software");
+}

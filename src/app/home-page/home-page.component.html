@@ -1,7 +1,266 @@
-<div class="home-page">
-    <h1>Welcome to our Company</h1>
-    <p>We are a leading company in the industry, providing top-quality products and services.</p>
-    <p>Our mission is to deliver excellence and exceed customer expectations.</p>
-    <!-- Add more content as needed -->
-  </div>
-  
+<!-- Hero Banner Section -->
+<section class="hero-slider-area">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            
+                <div class="slider-item slider-item-bg-1" [ngStyle]="{backgroundImage:'url(../../assets/images/slider/slider-5.jpg)'}">
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="container">
+                                <div class="slider-text one">
+                                    <span class="top-title">Welcome to Pioneer Associate</span>
+                                    <h1>Keep Your Business Safe With Our Services</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto laborum eaque! Deserunt maxime, minus quas molestiae reiciendis.</p>
+                                    <div class="slider-btn">
+                                        <a class="default-btn btn-theme" href="/contact">
+                                            Contact
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </ng-template>
+        <ng-template carouselSlide>
+          
+            <div class="slider-item slider-item-bg-2" [ngStyle]="{backgroundImage:'url(../../assets/images/slider/slider-6.jpg)'}">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="container">
+                            <div class="slider-text one">
+                                <span class="top-title">Welcome to Pioneer Associate</span>
+                                <h1>Keep Your Business Safe With Our Services</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto laborum eaque! Deserunt maxime, minus quas molestiae reiciendis.</p>
+                                <div class="slider-btn">
+                                    <a class="default-btn btn-theme" href="/contact">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </ng-template>
+      </owl-carousel-o>
+</section>
+<!-- Hero Banner Section End -->
+
+<!-- Featured Tab Section -->
+<app-tabs></app-tabs>
+<!-- Featured Tab Section End -->
+
+<!-- Support Section -->
+<section class="support_area ptb-100 bg-grey">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 wow slideInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                <div class="support_box_wrap mb-30">
+                    <div class="single_item">
+                        <div class="item">
+                            <i class="flaticon-application"></i>
+                            <span>web application</span>
+                        </div>
+                    </div>
+                    <div class="single_item">
+                        <div class="item">
+                            <i class="flaticon-question"></i>
+                            <span>FAQ/Knowledge</span>
+                        </div>
+                        <div class="item">
+                            <div class="logo">
+                                <img src="assets/images/icon/logo_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="flaticon-24-hours-support"></i>
+                            <span>24/7 support</span>
+                        </div>
+                    </div>
+                    <div class="single_item">
+                        <a class="item" href="https://www.cosys.com.np/" target="_blank">
+                            <i class="flaticon-software"></i>
+                            <span>cooperative software</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="support_content">
+                    <div class="sec_title">
+                        <span class="sub-line">Support & Service</span>
+                        <h2 class="st_main">Delivering Innovation Goals.</h2>
+                        <p>Our online support through email, project management software and messenger is a robust and flexible turn-key solution, allowing you to implement effective support channels, e-mail management and manage self-help resources. Online Support does this by combining ticketed support (web and e-mail based), live chat and an intuitive customer interface.</p>
+                    </div>
+                    <ul class="support_list mb-4">
+                        <li><i class="bx bx-check"></i> View software & web application features</li>
+                        <li><i class="bx bx-check"></i> Request for a demo</li>
+                        <li><i class="bx bx-check"></i> Search our FAQ/Knowledge Base</li>
+                    </ul>
+                    <div class="support_btn">
+                        <a class="default-btn btn-theme" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Support Section end -->
+
+<!-- About Section -->
+<section class="about_area ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="row">
+            <div class="column-inner-1 col-lg-6 col-md-6 col-xs-12 col-md-12">
+                <div class="column-1-inner position-relative">
+                    <h1 class="start-up">Start up your New Career Ventures With <span>Pioneer Associate</span></h1>
+                    <p class="para"><em class="theme-red">Pioneer Associate</em> mission is to help our customers be more productive and efficient by offering professional and affordable Web Design services to compliment the client's marketing and cost containment.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12">
+                            <h6><a href="#">Discover</a></h6>
+                        </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="column-inner-2 col-lg-6 col-md-6 col-xs-12 col-md-12">
+                <div class=" column-2-inner position-relative">
+                    <div class="text-inner-1">
+                        <div class="icon">
+                            <a href="#"><span class="bx bx-globe icon"></span></a>
+                        </div>
+                        <div class="text-left">
+                            <h2> <a href="#">A Global Network</a></h2>
+                            <p>That empathy of business ownership creates the relationship they required to actually make a difference.</p>
+                        </div>
+                    </div>
+                    <div class="text-inner-1">
+                        <div class="icon">
+                            <a href="#"> <span class="bx bx-bulb icon"></span></a>
+                        </div>
+                        <div class="text-left" style="padding-left: 0px;">
+                            <h2><a href="#">Commitment to Innovation</a> </h2>
+                            <p>Over 20 years we have been advising a diverse range of businesses on how they can find a competitive advantage.</p>
+                        </div>
+                    </div>
+                    <div class="text-inner-1">
+                        <div class="icon">
+                            <a href="#"> <span class="bx bx-accessibility icon"></span></a>
+                        </div>
+                        <div class="text-left">
+                            <h2><a href="#">Building Trusted Partnership </a></h2>
+                            <p>We partner with clients to put recommendations into practice and work directly with them over the long-term.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+
+<!-- Our Services Section Start -->
+<section class="our-services-section ptb-100">
+    <div class="container">
+        <div class="section-title sec_title-two">
+            <span>Our services</span>
+            <h2>Professional services</h2>
+            <p>We help agencies to define their new business objectives and then create the road map</p>
+        </div>
+        <div class="row">
+            
+            <!-- single dervices -->
+            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+                <div class="single-service wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="service-icon">
+                        <i class="flaticon-project-plan"></i>
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-content">
+                            <h4>Design & Development</h4>
+                            <p>Website Design and Development, Web Content Management, Joomla Solutions, Typo3 Solutions, Application Development and Dynamic Website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single dervices -->
+            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+                <div class="single-service wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="service-icon">
+                        <i class="flaticon-gear"></i>
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-content">
+                            <h4>Software Development</h4>
+                            <p>Web Applications, Content Management, ERP Packages, CRM, Database Design, XML, PHP, ASP, .NET, VB, Oracle MS SQL, My SQL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single dervices -->
+            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+                <div class="single-service wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="service-icon">
+                        <i class="flaticon-business"></i>
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-content">
+                            <h4>Marketing & Sales</h4>
+                            <p>Outsource web programming to Kathmandu, Nepal,ASP.NET, PHP, Open Source Development, C# programming to Kathmandu, Nepal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single dervices -->
+            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+                <div class="single-service wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="service-icon">
+                        <i class="flaticon-content"></i>
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-content">
+                            <h4>Data Entry Services</h4>
+                            <p>Data Entry Services, Data Processing, Data Conversion, Offshore Print Publishing, Outsource Media, PDF's.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single dervices -->
+            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+                <div class="single-service wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="service-icon">
+                        <i class="flaticon-database"></i>
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-content">
+                            <h4>Cloude services</h4>
+                            <p>Creative Graphic Design Services, Brochure Design,, Logo, Corporate Identity, Flyer, Postcard Design, Calling Cards, Book Cover Layouts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single dervices -->
+            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+                <div class="single-service wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="service-icon">
+                        <i class="flaticon-information-desk"></i>
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-content">
+                            <h4>It support helpdesk</h4>
+                            <p>E-Commerce Web Development, Shopping Cart, Ecommerce Solutions, Shopping Cart Design Services, OS Commerce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single dervices -->
+            
+        </div>
+    </div>
+</section>
+<!-- Our Services Section End -->

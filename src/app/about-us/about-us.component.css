@@ -1,4 +1,250 @@
-.container {
-    padding: 20px;
-  }
-  
+/* 
+Page Title Area Style
+=====================================================*/
+.breadcrumb-area {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.breadcrumb-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 29, 76, 0.8);
+  z-index: -1;
+  -webkit-animation: 5s fadeInLeft both;
+          animation: 5s fadeInLeft both;
+}
+
+.breadcrumb-area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 29, 76, 0.8);
+  -webkit-animation: 5s fadeInRight both;
+          animation: 5s fadeInRight both;
+  z-index: -1;
+}
+
+.breadcrumb-area .breadcrumb-content{
+  position: relative;
+  z-index: 100;
+  color: #ffffff;
+}
+
+.breadcrumb-area .breadcrumb-content span {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.breadcrumb-area .breadcrumb-content h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.breadcrumb-area .breadcrumb-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.breadcrumb-area .breadcrumb-content ul li {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.breadcrumb-area .breadcrumb-content ul li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -3px;
+  background-color: #ffffff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.breadcrumb-area .breadcrumb-content ul li:last-child::before {
+  display: none;
+}
+
+.breadcrumb-area .breadcrumb-content ul li:last-child{
+  font-weight: 600;
+}
+
+.breadcrumb-area .breadcrumb-content ul li a {
+  color: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.breadcrumb-area .breadcrumb-content ul li a:hover {
+  color: #d43c2f;
+}
+
+/*
+Company Area Style
+======================================================*/
+
+.company-area {
+  padding-top: 130px;
+  padding-bottom: 130px
+}
+
+.company-area .company-content {
+  margin-top: -8px;
+  margin-bottom: -8px
+}
+
+.company-area .company-content .company-tittle span {
+  color: #d43c2f;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: inline-block
+}
+
+.company-area .company-content .company-tittle h2 {
+  margin-bottom: 20px;
+  font-size: 40px
+}
+
+.company-area .company-img {
+  position: relative;
+  z-index: 1
+}
+
+.company-area .company-img img{
+  width: 100%;
+}
+
+.company-area .company-img:before {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 100px;
+  background: #d43c2f;
+  z-index: -1;
+  left: -30px;
+  top: -30px;
+  border-radius: 4px
+}
+
+.company-area .company-img:after {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 100px;
+  background: #091d3e;
+  z-index: -1;
+  right: -30px;
+  bottom: -30px;
+  border-radius: 4px
+}
+
+.commitment-area {
+    padding: 0px 0px 100px 0px;
+}
+
+.commitment-area .card-item {
+    padding: 33px 30px 33px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.commitment-area .card-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -101%;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    background-size: 101% 101%;
+}
+
+.commitment-area .card-item::before {
+    left: 0;
+    top: 100%;
+}
+
+.commitment-area .card-item:hover::before{
+  top: 0;
+}
+
+.commitment-area .card-item:hover::before {
+    background-color: #FF4255;
+}
+
+.commitment-area .card-item .card-icon{
+  color: #d43c2f;
+  position: relative;
+  margin: 0px 20px 0px 0px;
+  z-index: 2;
+}
+
+.commitment-area .card-item .card-icon i{
+  font-size: 50px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  line-height: 1;
+}
+
+.commitment-area .card-item:hover .card-icon{
+  color: #ffffff;
+}
+
+.commitment-area .card-item .card-body{
+  position: relative;
+  padding: 0;
+  z-index: 2;
+}
+
+.commitment-area .card-item:hover .card-body{
+  color: #ffffff;
+}
+
+.commitment-area .card-item:hover .card-body h3{
+  color: #ffffff;
+}
+
+.commitment-area .card-item .card-body h3{
+  margin: 20px 0px 20px 0px;
+  padding: 0;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;;
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?7e7b2bdb28f63c00e7fafd83fb89fed9") format("truetype"), url("./flaticon.woff?7e7b2bdb28f63c00e7fafd83fb89fed9") format("woff"), url("./flaticon.woff2?7e7b2bdb28f63c00e7fafd83fb89fed9") format("woff2"), url("./flaticon.eot?7e7b2bdb28f63c00e7fafd83fb89fed9#iefix") format("embedded-opentype"), url("./flaticon.svg?7e7b2bdb28f63c00e7fafd83fb89fed9#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-phone-call:before {
+  content: "";
+}
+
+.flaticon-map-pointer:before {
+  content: "";
+}
+
+.flaticon-cancel:before {
+  content: "";
+}
+
+.flaticon-24-hours-support:before {
+  content: "";
+}
+
+.flaticon-project-plan:before {
+  content: "";
+}
+
+.flaticon-content:before {
+  content: "";
+}
+
+.flaticon-business:before {
+  content: "";
+}
+
+.flaticon-gear:before {
+  content: "";
+}
+
+.flaticon-database:before {
+  content: "";
+}
+
+.flaticon-information-desk:before {
+  content: "";
+}
+
+.flaticon-question:before {
+  content: "";
+}
+
+.flaticon-application:before {
+  content: "";
+}
+
+.flaticon-right:before {
+  content: "";
+}
+
+.flaticon-target:before {
+  content: "";
+}
+
+.flaticon-chart:before {
+  content: "";
+}
+
+.flaticon-clipboard:before {
+  content: "";
+}
+
+.flaticon-value:before {
+  content: "";
+}
+
+.flaticon-idea:before {
+  content: "";
+}
+
+.flaticon-software:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */

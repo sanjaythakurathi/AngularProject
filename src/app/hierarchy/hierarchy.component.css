@@ -1,4 +1,104 @@
-.container {
-    padding: 20px;
-  }
-  
+/* 
+Page Title Area Style
+=====================================================*/
+.breadcrumb-area {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.breadcrumb-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 29, 76, 0.8);
+  z-index: -1;
+  -webkit-animation: 5s fadeInLeft both;
+          animation: 5s fadeInLeft both;
+}
+
+.breadcrumb-area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 29, 76, 0.8);
+  -webkit-animation: 5s fadeInRight both;
+          animation: 5s fadeInRight both;
+  z-index: -1;
+}
+
+.breadcrumb-area .breadcrumb-content{
+  position: relative;
+  z-index: 100;
+  color: #ffffff;
+}
+
+.breadcrumb-area .breadcrumb-content span {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.breadcrumb-area .breadcrumb-content h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.breadcrumb-area .breadcrumb-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.breadcrumb-area .breadcrumb-content ul li {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.breadcrumb-area .breadcrumb-content ul li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -3px;
+  background-color: #ffffff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.breadcrumb-area .breadcrumb-content ul li:last-child::before {
+  display: none;
+}
+
+.breadcrumb-area .breadcrumb-content ul li:last-child{
+  font-weight: 600;
+}
+
+.breadcrumb-area .breadcrumb-content ul li a {
+  color: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.breadcrumb-area .breadcrumb-content ul li a:hover {
+  color: #d43c2f;
+}
