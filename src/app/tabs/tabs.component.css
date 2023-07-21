@@ -53,6 +53,7 @@ Get A Quat Area Six
   }
   
   .get-quat-list-tab .get-quat-img {
+    margin: 20px 0;
     -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   }

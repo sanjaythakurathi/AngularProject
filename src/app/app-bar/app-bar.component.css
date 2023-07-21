@@ -862,7 +862,7 @@ Nav Area Six
 @media only screen and (max-width: 991px){
   
   .iso-logo{
-    padding: 0 20px;
+    padding: 5px 20px 0 20px;
     border-right: 1px solid #ccc;
     margin-left: auto;
   }

@@ -2024,3 +2024,7 @@ div#mCSB_1_container{
   -ms-transform: translateX(0%) !important;
   transform: translateX(0%) !important;
 } */
+
+.mobile-menu .iso-logo {
+  display: none;
+}
