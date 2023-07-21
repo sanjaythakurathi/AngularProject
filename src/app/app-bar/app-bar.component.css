@@ -868,33 +868,3 @@ Nav Area Six
   }
 }
 
-.mobile-menu-visible .mobile-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.mobile-menu-visible .mobile-menu .menu-backdrop {
-  opacity: 0.70;
-  visibility: visible;
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -ms-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-}
-
-.mobile-menu-visible .mobile-menu .menu-box {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -ms-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-}

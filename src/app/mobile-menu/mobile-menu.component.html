@@ -1,26 +1,13 @@
 <!-- <div style="width: 20px; height: 20px; background-color: red;"></div> -->
 
 <!-- Mobile Menu -->
-<div class="mobile-menu" *ngIf="true">
+<div class="mobile-menu">
     <div class="menu-backdrop" (click)="hideMobileMenu()"></div>
     <div class="close-btn" (click)="hideMobileMenu()"><i class="bx bx-x"></i></div>
   
     <nav class="menu-box">
       <!-- Menu content will be dynamically added here -->
       <div class="menu-outer" [innerHTML]="mobileMenuContent"></div>
-      <div class="contact-info">
-        <h4>Contact Info</h4>
-        <ul>
-          <li>Chicago 12, Melborne City, USA</li>
-          <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-        </ul>
-      </div>
-      <div class="social-links">
-        <ul class="clearfix">
-          <li><a [href]="'https://www.facebook.com/cosyscooperative'" target="_blank"><span class="fab fa-facebook-square"></span></a></li>
-        </ul>
-      </div>
     </nav>
 </div>
 

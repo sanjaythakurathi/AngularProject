@@ -10,7 +10,7 @@ import { MenuItem } from 'primeng/api/menuitem';
 
 export class AppBarComponent  {
   activeMenuItem: string = '/home';
-  isMobileMenuVisible: boolean = true;
+  isMobileMenuVisible: boolean = false;
   items: MenuItem[] = [];
 
   constructor(private router: Router, private renderer: Renderer2) {
@@ -69,7 +69,7 @@ export class AppBarComponent  {
   // }
 
   toggleMobileMenu() {
-    this.isMobileMenuVisible = !this.isMobileMenuVisible;
+    this.isMobileMenuVisible =  true;
     if (this.isMobileMenuVisible) {
       this.renderer.addClass(document.body, 'mobile-menu-visible');
     } else {
