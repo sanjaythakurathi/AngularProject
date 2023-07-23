@@ -7,8 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class ApiDataService {
 
-  private apiUrl = 'http://192.168.1.241/pioneer/public/api'; // Replace this with the actual API URL
-  //private apiUrl = 'https://dummyjson.com/posts'; 
+  private apiUrl = 'http://192.168.1.241/pioneer/public/api/v1'; // Replace this with the actual API URL
+  //private apiUrl = 'https://jsonplaceholder.typicode.com/posts'; 
+
   constructor(private http: HttpClient) { }
 
   getAboutUsData(): Observable<any> {
@@ -19,10 +20,9 @@ export class ApiDataService {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json' // Adjust the content type as needed
-      })
+      }),
     };
 
-    //return this.http.post<any>(this.apiUrl, data, httpOptions);
     return this.http.post<any>(this.apiUrl, data, httpOptions);
   }
 }
