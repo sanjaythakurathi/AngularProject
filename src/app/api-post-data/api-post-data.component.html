@@ -1,0 +1,17 @@
+<form (submit)="onSubmit()">
+    <!-- Your form fields here if required -->
+    <button type="submit">Submit Data</button>
+  </form>
+  
+
+
+  <div *ngIf="responseData">
+    <!-- Display the response data using JSON.stringify() -->
+    <pre>{{ responseData | json }}</pre>
+  
+    <!-- Display specific properties of the response data -->
+    <p><strong>ID:</strong> {{ responseData.id }}</p>
+    <p><strong>Title:</strong> {{ responseData.title }}</p>
+    <p><strong>Body:</strong> {{ responseData.body }}</p>
+    <!-- Display other properties of responseData as needed -->
+  </div>

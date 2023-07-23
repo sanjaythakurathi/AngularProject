@@ -24,6 +24,10 @@ import { FooterComponent } from './footer/footer.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RemovePTagPipe } from './remove-ptag.pipe';
+import { ApiPostDataComponent } from './api-post-data/api-post-data.component';
+
 @NgModule({
   declarations: [
     
@@ -39,7 +43,9 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     FooterComponent,
     TabsComponent,
     PrivacyPolicyComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    RemovePTagPipe,
+    ApiPostDataComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
-    
+    HttpClientModule,
  
   ],
   providers: [],

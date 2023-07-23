@@ -17,15 +17,17 @@
 
 <!-- Start About Area -->
 <section class="company-area">
-  <div class="container">
+  <div class="container" *ngIf="aboutUsData">
       <div class="row align-items-center">
           <div class="col-lg-6 col-md-12">
               <div class="company-content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                  <div class="company-content">
-                      <span>About Us</span>
-                      <h2>Through Fintech/Digital Solutions, we are committed to assisting cooperatives in running more efficiently.</h2>
-                      <p>Pioneer Associate mission is to help our customers be more productive and efficient by offering professional and affordable Web Design services to compliment the client's marketing and cost containment. We find that many clients don't really know what they want to include, or what they should include, on their Websites.</p>
-                      <p>Pioneer Associate Technology is here to assist you in making these decisions so your Website will provide the end results you are looking for.</p>
+                  <div class="company-content" *ngFor="let item of aboutUsData">
+                    
+
+                    <span>About Us</span>
+                    <h2>{{ item.title }}</h2>
+                    <div [innerHTML]="item.introduction | removePTag"></div>
+                                        
                   </div>
               </div>
           </div>
@@ -37,6 +39,7 @@
       </div>
   </div>
 </section>
+
 <!-- End About Area -->
 
 <section class="commitment-area">
@@ -92,3 +95,5 @@
       </div>
   </div> 
 </section>
+
+<!-- <app-api-post-data></app-api-post-data> -->

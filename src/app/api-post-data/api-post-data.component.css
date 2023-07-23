@@ -1,0 +1,21 @@
+/* Add responsive styles to the response container */
+.response-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+  
+  /* Example of responsive styles for larger screens */
+  @media (min-width: 768px) {
+    .response-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .response-container div {
+      margin-bottom: 10px;
+    }
+  }
