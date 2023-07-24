@@ -102,3 +102,126 @@ Page Title Area Style
 .breadcrumb-area .breadcrumb-content ul li a:hover {
   color: #d43c2f;
 }
+
+/*
+Team Area
+======================================================*/
+
+.team-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+
+.single-team.inner-box {
+  width: 300px;
+  margin: 0 auto 30px
+}
+
+.single-team {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.single-team .image {
+  position: relative;
+}
+
+.single-team .image .social {
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+.single-team .image .social li {
+  display: inline-block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.single-team .image .social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #091d3e;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.single-team .image .social li a i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.single-team .image .social li a:hover {
+  color: #ffffff;
+  background-color: #d43c2f;
+}
+
+.single-team .image .social li:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.single-team .image .social li:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.single-team .image .social li:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.single-team .image .social li:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.single-team .content {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  position: relative;
+  margin: -30px auto 0;
+  max-width: 320px;
+}
+
+.single-team .content h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.single-team .content span {
+  display: block;
+  color: #d43c2f;
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.single-team:hover .image .social li {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}

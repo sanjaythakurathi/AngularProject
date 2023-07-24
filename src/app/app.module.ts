@@ -27,6 +27,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RemovePTagPipe } from './remove-ptag.pipe';
 import { ApiPostDataComponent } from './api-post-data/api-post-data.component';
+import { OurMissionComponent } from './about-us/our-mission/our-mission.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ApiPostDataComponent } from './api-post-data/api-post-data.component';
     PrivacyPolicyComponent,
     MobileMenuComponent,
     RemovePTagPipe,
-    ApiPostDataComponent
+    ApiPostDataComponent,
+    OurMissionComponent
   ],
   imports: [
     BrowserModule,

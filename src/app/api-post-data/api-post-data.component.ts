@@ -10,7 +10,7 @@ export class ApiPostDataComponent {
   dataToSend ={
     title: 'foo',
     body: 'bar',
-    userId: 1,
+    userId: 1
   };
   responseData: any;
   constructor(private apiService: ApiDataService) { }

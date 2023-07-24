@@ -1,0 +1,109 @@
+/*
+Company Area Style
+======================================================*/
+
+
+  
+  .commitment-area {
+    padding: 0px 0px 100px 0px;
+  }
+  
+  .commitment-area .card-item {
+    padding: 33px 30px 33px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .commitment-area .card-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -101%;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    background-size: 101% 101%;
+  }
+  
+  .commitment-area .card-item::before {
+    left: 0;
+    top: 100%;
+  }
+  
+  .commitment-area .card-item:hover::before{
+    top: 0;
+  }
+  
+  .commitment-area .card-item:hover::before {
+    background-color: #FF4255;
+  }
+  
+  .commitment-area .card-item .card-icon{
+    color: #d43c2f;
+    position: relative;
+    margin: 0px 20px 0px 0px;
+    z-index: 2;
+  }
+  
+  .commitment-area .card-item .card-icon i{
+    font-size: 50px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    line-height: 1;
+  }
+  
+  .commitment-area .card-item:hover .card-icon{
+    color: #ffffff;
+  }
+  
+  .commitment-area .card-item .card-body{
+    position: relative;
+    padding: 0;
+    z-index: 2;
+  }
+  
+  .commitment-area .card-item:hover .card-body{
+    color: #ffffff;
+  }
+  
+  .commitment-area .card-item:hover .card-body h3{
+    color: #ffffff;
+  }
+  
+  .commitment-area .card-item .card-body h3{
+    margin: 20px 0px 20px 0px;
+    padding: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .commitment-area .card-item {
+      margin-top: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .company-area .company-img {
+      margin-top: 40px;
+    }
+  
+    .company-area .company-img:before,
+    .company-area .company-img:after {
+      display: none;
+    }
+  }
