@@ -1,56 +1,46 @@
-// import { Injectable } from '@angular/core';
-// import { HttpClient, HttpHeaders } from '@angular/common/http';
-// import { Observable } from 'rxjs';
-// import { environment } from '../environments/environment'; // Import the environment
-
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class ApiDataService {
-
-//   private apiUrl = environment.apiUrl; // Use the apiUrl from environment
-//   imageUrl = environment.imageUrl; // Use the imageUrl from environment
-
-//   constructor(private http: HttpClient) { }
-
-//   getAboutUsData(): Observable<any> {
-//     const apiToken = environment.apiToken; // Use the apiToken from environment
-//     const headers = { 'Authorization': `Bearer ${apiToken}` };
-//     return this.http.get<any>(`${this.apiUrl}/aboutus`, { headers });
-//   }
-
-//   getOurTeamData(): Observable<any> {
-//     const apiToken = environment.apiToken; // Use the apiToken from environment
-//     const headers = { 'Authorization': `Bearer ${apiToken}` };
-//     return this.http.get<any>(`${this.apiUrl}/ourteam`, { headers });
-//   }
-
-//   // Function to perform the POST request
-//   postData(data: any) {
-//     const httpOptions = {
-//       headers: new HttpHeaders({
-//         'Content-Type': 'application/json; charset=UTF-8', // Adjust the content type as needed
-//       }),
-//     };
-
-//     return this.http.post<any>(this.apiUrl, data, httpOptions);
-//   }
-// }
-
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../environments/environment'; // Import the environment
+import  {environment} from '../environments/envi'; // Import the environment
+
+type OurTeamResponse= {
+  ourteam: {
+    id:string;
+    title:string;
+    category:string;
+    position:string;
+    facebook:string;
+    youtube:string;
+    linkedin:string;
+    image:string;
+    created_at:string;
+    updated_at:string;
+    //[key:string ]:string
+  }[];
+}
+
+type AboutUsResponse= {
+  aboutus: {
+  id:string;
+  title:string;
+  description:string;
+  }[];
+}
 
 @Injectable({
   providedIn: 'root'
 })
-export class ApiDataService {
-  private apiUrl = environment.apiUrl;
-  private _apiToken: string = environment.apiToken;
-  imageUrl = environment.imageUrl;
 
-  constructor(private http: HttpClient) { }
+export class ApiDataService {
+  private apiUrl =''
+  private _apiToken: string = ''
+  imageUrl = ''
+
+  constructor(private http: HttpClient) {
+    this._apiToken = environment.apiToken
+    this.apiUrl = environment.apiUrl
+    this.imageUrl = environment.imageUrl
+  }
 
   private getHeaders(): HttpHeaders {
     return new HttpHeaders({
@@ -59,12 +49,12 @@ export class ApiDataService {
     });
   }
 
-  getAboutUsData(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/aboutus`, { headers: this.getHeaders() });
+  getAboutUsData(): Observable<AboutUsResponse> {
+    return this.http.get<AboutUsResponse>(`${this.apiUrl}/aboutus`, { headers: this.getHeaders() });
   }
 
-  getOurTeamData(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/ourteam`, { headers: this.getHeaders() });
+  getOurTeamData(): Observable<OurTeamResponse> {
+    return this.http.get<OurTeamResponse>(`${this.apiUrl}/ourteam`, { headers: this.getHeaders() });
   }
 
   // Function to perform the POST request

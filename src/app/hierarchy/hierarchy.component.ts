@@ -19,7 +19,7 @@ export class HierarchyComponent implements OnInit {
   loadOurTeamData() {
     this.apiDataService.getOurTeamData().subscribe(
       (data) => {
-        console.log(data)
+        // console.log(data.ourteam[0].)
         this.ourTeamData = data.ourteam;
         console.log('Our Team Data:', this.ourTeamData);
       },
