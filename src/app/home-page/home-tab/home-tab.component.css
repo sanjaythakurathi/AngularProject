@@ -1,0 +1,64 @@
+.get-quat-list-tab {
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding: 50px;
+    border-top: 2px solid #d43c2f;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .get-quat-list-tab .single-get-list {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d43c2f;
+    cursor: pointer;
+  }
+  
+  .get-quat-list-tab .single-get-list:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .get-quat-list-tab .single-get-list i {
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    color: #d43c2f;
+  }
+  
+  .get-quat-list-tab .single-get-list span {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .get-quat-list-tab .get-quat-content {
+    margin-bottom: 0;
+  }
+  
+  .get-quat-list-tab .get-quat-content h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .get-quat-list-tab .get-quat-content p {
+    margin-bottom: 26px;
+  }
+  
+  .get-quat-list-tab .get-quat-img {
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tab .tabs_item {
+    display: none;
+  }
+  
+  .tab .tabs_item:first-child {
+    display: block;
+  }
+  

@@ -1,0 +1,272 @@
+.support_box_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 80px;
+  }
+  .support_box_wrap .single_item .item {
+    background: #d43c2f;
+    color: #fff;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 185px;
+    height: 185px;
+    align-items: center;
+  }
+  .support_box_wrap .single_item .item .logo {
+    max-width: 110px;
+  }
+  .support_box_wrap .single_item:nth-child(2) {
+    display: flex;
+  }
+  .support_box_wrap .single_item:nth-child(2) .item {
+    background-color: #001d4c;
+  }
+  .support_box_wrap .single_item .item:nth-child(2) {
+    background-color: #fff;
+    color: #ff9c00;
+  }
+  .support_box_wrap .single_item .item span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .support_box_wrap .single_item .item i {
+    line-height: 1.1;
+  }
+  .support_content .support_list {
+    list-style: none;
+  }
+  .support_content .support_list li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+  .support_content .support_list li:last-child {
+    margin-bottom: 0;
+  }
+  .support_content .support_list li i {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+    color: #003e84;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  .support_image .video_icon {
+    left: auto;
+    right: -60px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  .support_image img {
+    width: 100%;
+  }
+  .support_image::before {
+    position: absolute;
+    left: -32px;
+    bottom: -32px;
+    content: "";
+    border-left: 200px solid #ff9c00;
+    border-bottom: 200px solid #ff9c00;
+    border-top: 200px solid transparent;
+    border-right: 200px solid transparent;
+    z-index: -1;
+  }
+  .support_text_wrap {
+    padding-left: 110px;
+  }
+  .support_text_wrap .support_text {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .support_text_wrap .support_text .icon {
+    font-size: 70px;
+    color: #ff9c00;
+    margin-right: 30px;
+  }
+  .support_text_wrap .support_text .text_wrap h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .support_img_wrap {
+    border: 1px solid #000;
+    padding-bottom: 64px;
+    padding-right: 64px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .support_img_wrap::before {
+    position: absolute;
+    bottom: 55px;
+    right: 190px;
+    width: 1px;
+    height: 300px;
+    background-color: #000;
+    content: "";
+    transform: rotate(-48deg);
+    z-index: -1;
+  }
+  .support_img_wrap img {
+    margin-left: -1px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .support_right_wrap {
+    padding-left: 50px;
+  }
+  .support_right_wrap .support_info {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .support_info .info_single .icon {
+    font-size: 55px;
+    color: #ff9c00;
+    margin-right: 20px;
+    line-height: 1;
+    margin-top: 15px;
+  }
+  .support_info .info_single {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+  .support_info .info_single p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0;
+    margin-top: 6px;
+  }
+  .support_right_wrap .thm_btn {
+    margin-top: 50px;
+  }
+  .support_image_wrap {
+    margin-bottom: 10px;
+  }
+  .support_image_wrap .support_img {
+    margin-right: 30px;
+    max-width: 320px;
+  }
+  .support_image_wrap .support_img:last-child {
+    margin-right: 0;
+  }
+  .support_content_wrap {
+    padding-left: 50px;
+  }
+  .support_content_wrap .ar_info.ul_li {
+    padding-top: 50px;
+    border-top: 1px solid #eaeaea;
+  }
+  .ar_info .call_info_wrap {
+    margin-left: 40px;
+    padding: 0;
+  }
+  .ar_info .call_info_wrap .icon {
+    color: #003e84;
+  }
+  .ar_info .call_info_wrap .call_info h5 {
+    margin-bottom: 0;
+    color: #003e84;
+  }
+  .ar_info .call_info_wrap .call_info span {
+    margin-bottom: 5px;
+  }
+  
+  /* XL Device :1200px. */
+  @media (min-width: 1200px) and (max-width: 1500px){
+    .support_box_wrap {
+      padding-right: 60px;
+    }
+    .support_box_wrap .single_item .item {
+      font-size: 55px;
+      width: 160px;
+      height: 160px;
+    }
+  }
+  
+  /* LG Device :992px. */
+  @media (min-width: 992px) and (max-width: 1199px){
+    .support_box_wrap .single_item .item {
+      font-size: 50px;
+      width: 140px;
+      height: 140px;
+    }
+    .support_box_wrap {
+      padding-right: 60px;
+    }
+  }
+  
+  /* MD Device :768px. */
+  @media (min-width: 768px) and (max-width: 991px){
+    .support_box_wrap .single_item .item {
+      font-size: 50px;
+      width: 160px;
+      height: 160px;
+    }
+    .support_box_wrap {
+      padding-right: 0;
+    }
+    .support_box_wrap .single_item .item .logo {
+          max-width: 80px;
+      }
+  }
+  
+  /* SM Device :320px. */
+  @media (max-width: 767px){
+    .support_box_wrap .single_item .item {
+      font-size: 40px;
+      width: 120px;
+      height: 120px;
+    }
+    .support_box_wrap .single_item .item span {
+      font-size: 14px;
+    }
+    .support_box_wrap {
+      padding-right: 0;
+    }
+    .support_box_wrap .single_item .item .logo {
+          max-width: 70px;
+      }
+  }
+  
+  /* SM Extra */
+  @media (max-width: 380px) {
+    .support_box_wrap .single_item .item {
+      font-size: 30px;
+      width: 110px;
+      height: 110px;
+    }
+    .support_box_wrap .single_item .item span {
+      font-size: 13px;
+    }
+  
+  }
+  /* Large Mobile :480px. */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .support_box_wrap .single_item .item {
+      font-size: 50px;
+      width: 150px;
+      height: 160px;
+    }
+    .support_box_wrap .single_item .item .logo {
+      max-width: 80px;
+    }
+  }

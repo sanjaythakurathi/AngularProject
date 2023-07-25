@@ -28,6 +28,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { RemovePTagPipe } from './remove-ptag.pipe';
 import { ApiPostDataComponent } from './api-post-data/api-post-data.component';
 import { OurMissionComponent } from './about-us/our-mission/our-mission.component';
+import { SupportServiceComponent } from './home-page/support-service/support-service.component';
+import { AboutAreaComponent } from './home-page/about-area/about-area.component';
+import { HomeServiceComponent } from './home-page/home-service/home-service.component';
+import { HomeTabComponent } from './home-page/home-tab/home-tab.component';
+import { MainBannerComponent } from './home-page/main-banner/main-banner.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,12 @@ import { OurMissionComponent } from './about-us/our-mission/our-mission.componen
     MobileMenuComponent,
     RemovePTagPipe,
     ApiPostDataComponent,
-    OurMissionComponent
+    OurMissionComponent,
+    SupportServiceComponent,
+    AboutAreaComponent,
+    HomeServiceComponent,
+    HomeTabComponent,
+    MainBannerComponent
   ],
   imports: [
     BrowserModule,

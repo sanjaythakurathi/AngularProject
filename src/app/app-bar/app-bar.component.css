@@ -142,6 +142,10 @@ Nav Area Style
   padding-right: 0px;
 }
 
+.main-menu .navigation > li.active > a {
+  color: #d43c2f;
+}
+
 .nav-area.style-one .main-menu .navigation > li > a:before{
   position: absolute;
   content: '';

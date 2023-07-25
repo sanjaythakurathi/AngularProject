@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ApiDataService {
 
   private apiUrl = 'http://192.168.1.241/pioneer/public/api/v1'; // Replace this with the actual API URL
-   imageUrl = 'http://192.168.1.241/pioneer/public/assets/images'; // Replace this with the actual API URL
+  imageUrl = 'http://192.168.1.241/pioneer/public/assets/images'; // Replace this with the actual API URL
   //private apiUrl = 'https://jsonplaceholder.typicode.com/posts'; 
 
   constructor(private http: HttpClient) { }

@@ -1,0 +1,82 @@
+.service-area{
+    position: relative;
+  }
+  .single-service {
+    z-index: 1;
+    background: #fff;
+    text-align: left;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: none;
+    text-align: left;
+    padding: 40px 40px;
+    border: 1px solid rgba(32,64,102,0.4);
+  }
+  .single-service::after{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 0%;
+    background:#091d3e;
+    opacity: 0;
+  transition: 0.4s;
+    content:"";
+    z-index: -1;
+  }
+  .service-icon i {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #d43c2f;
+  }
+  
+  .service-content h4 {
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 0;
+    padding: 0 0 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  .single-service:hover::after {
+    transition: 0.4s;
+    opacity: 1;
+    height: 100%;
+  }
+  .service-content p {
+    font-size: 16px;
+  }
+  .service-btn {
+    font-size: 17px;
+    color: #3078fb;
+    transition: 0.5s;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 41px;
+    font-weight: 700;
+    border-radius: 2px;
+    background: #f5f8fb;
+    text-align: center;
+    border: 1px solid #f5f8fb;
+    margin-top: 10px;
+  }
+  .service-btn:hover{
+    color: #fff;
+    transition: 0.5s;
+    background: #d43c2f;
+    border: 1px solid #d43c2f;
+  }
+  .single-service:hover .service-icon i,
+  .single-service:hover .service-content h4{
+    color:#fff;
+  }
+  .single-service:hover .service-content p{
+    color:#ddd;
+  }

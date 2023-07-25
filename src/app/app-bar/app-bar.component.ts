@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output, Renderer2 } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { MenuItem } from 'primeng/api/menuitem';
 
@@ -55,18 +55,9 @@ export class AppBarComponent  {
     } else if (url.includes('/hierarchy')) {
       this.activeMenuItem = 'hierarchy';
     } else {
-      this.activeMenuItem = '';
+      this.activeMenuItem = '/';
     }
   }
-
-  // toggleMobileMenu() {
-  //   this.mobileMenuVisible = !this.mobileMenuVisible;
-  //   if (this.mobileMenuVisible) {
-  //     this.renderer.addClass(document.body, 'mobile-menu-visible');
-  //   } else {
-  //     this.renderer.removeClass(document.body, 'mobile-menu-visible');
-  //   }
-  // }
 
   toggleMobileMenu() {
     this.isMobileMenuVisible =  true;
