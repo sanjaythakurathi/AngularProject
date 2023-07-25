@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 // import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +34,7 @@ import { AboutAreaComponent } from './home-page/about-area/about-area.component'
 import { HomeServiceComponent } from './home-page/home-service/home-service.component';
 import { HomeTabComponent } from './home-page/home-tab/home-tab.component';
 import { MainBannerComponent } from './home-page/main-banner/main-banner.component';
+
 
 @NgModule({
   declarations: [
@@ -71,6 +73,7 @@ import { MainBannerComponent } from './home-page/main-banner/main-banner.compone
     MatToolbarModule,
     MatButtonModule,
     HttpClientModule,
+    FormsModule,
  
   ],
   providers: [],
