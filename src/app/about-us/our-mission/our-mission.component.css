@@ -91,19 +91,9 @@ Company Area Style
     -webkit-transition: all .4s ease;;
   }
   
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .commitment-area .card-item {
       margin-top: 30px;
     }
   }
   
-  @media only screen and (max-width: 991px) {
-    .company-area .company-img {
-      margin-top: 40px;
-    }
-  
-    .company-area .company-img:before,
-    .company-area .company-img:after {
-      display: none;
-    }
-  }

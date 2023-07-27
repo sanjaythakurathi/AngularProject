@@ -48,6 +48,8 @@ body {
   color: #6e6e6e;
 }
 
+
+
 a {
   display: inline-block;
   -webkit-transition: all 0.5s;
@@ -224,6 +226,71 @@ textarea.form-control {
 
 .fw-600 {
   font-weight: 600 !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+  .pt-70 {
+    padding-top: 70px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 22px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .pt-70 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+    font-size: 1.375rem !important;
+  }
+
+  span{
+    font-size: 1.375rem;
+  }
+
+  h3 {
+    font-size: 1.563rem;
+  }
+
+  .ml-30 {
+    margin: 0;
+  }
 }
 
 /*
@@ -789,6 +856,18 @@ OTHER STYLE AREA
 
 .section-title h2:last-child {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title {
+    margin-top: -5px;
+    margin-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
 }
 
 .section-title.white-title span {
@@ -1696,7 +1775,7 @@ OTHER STYLE AREA
   transition: all 500ms ease; 
 }
 
-.mobile-menu .navigation li > a.active:before{
+.mobile-menu .navigation li.current > a:before{
   height:100%;
 }
 

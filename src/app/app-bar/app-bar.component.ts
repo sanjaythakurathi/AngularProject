@@ -22,16 +22,16 @@ export class AppBarComponent  {
     });
   }
 
-  ngOnInit(): void {
-    this.items = [
-      { label: 'Home', icon: 'pi pi-home', routerLink: '/home' },
-      { label: 'About', icon: 'pi pi-info', routerLink: '/about' },
-      { label: 'Services', icon: 'pi pi-cog', routerLink: '/services' },
-      { label: 'Portfolio', icon: 'pi pi-images', routerLink: '/portfolio' },
-      { label: 'Contact', icon: 'pi pi-envelope', routerLink: '/contact' },
-      { label: 'Hierarchy', icon: 'pi pi-users', routerLink: '/hierarchy' }
-    ];
-  }
+  // ngOnInit(): void {
+  //   this.items = [
+  //     { label: 'Home', icon: 'pi pi-home', routerLink: '/home' },
+  //     { label: 'About', icon: 'pi pi-info', routerLink: '/about' },
+  //     { label: 'Services', icon: 'pi pi-cog', routerLink: '/services' },
+  //     { label: 'Portfolio', icon: 'pi pi-images', routerLink: '/portfolio' },
+  //     { label: 'Contact', icon: 'pi pi-envelope', routerLink: '/contact' },
+  //     { label: 'Hierarchy', icon: 'pi pi-users', routerLink: '/hierarchy' }
+  //   ];
+  // }
   
   setActiveMenuItem(url: string) {
     const menuItems = document.querySelectorAll('.menu-item');
@@ -43,21 +43,21 @@ export class AppBarComponent  {
       }
     });
 
-    // if (url.includes('/home')) {
-    //   this.activeMenuItem = 'home';
-    // } else if (url.includes('/about')) {
-    //   this.activeMenuItem = 'about';
-    // } else if (url.includes('/services')) {
-    //   this.activeMenuItem = 'services';
-    // } else if (url.includes('/portfolio')) {
-    //   this.activeMenuItem = 'portfolio';
-    // } else if (url.includes('/contact')) {
-    //   this.activeMenuItem = 'contact';
-    // } else if (url.includes('/hierarchy')) {
-    //   this.activeMenuItem = 'hierarchy';
-    // } else {
-    //   this.activeMenuItem = '/';
-    // }
+    if (url.includes('/home')) {
+      this.activeMenuItem = 'home';
+    } else if (url.includes('/about')) {
+      this.activeMenuItem = 'about';
+    } else if (url.includes('/services')) {
+      this.activeMenuItem = 'services';
+    } else if (url.includes('/portfolio')) {
+      this.activeMenuItem = 'portfolio';
+    } else if (url.includes('/contact')) {
+      this.activeMenuItem = 'contact';
+    } else if (url.includes('/hierarchy')) {
+      this.activeMenuItem = 'hierarchy';
+    } else {
+      this.activeMenuItem = '/';
+    }
   }
 
   toggleMobileMenu() {

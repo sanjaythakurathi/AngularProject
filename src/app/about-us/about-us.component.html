@@ -25,6 +25,9 @@
 
                     <!-- <span>About Us</span> -->
                     <h2>{{ aboutus.title }}</h2>
+                    <div class="res-company-img my-4">
+                        <img src="{{imageUrl}}/aboutus_images/{{ aboutus.image }}" alt="company">
+                    </div>
                     <div [innerHTML]="aboutus.introduction | removePTag"></div>
                                         
                   </div>

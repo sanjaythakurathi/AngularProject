@@ -142,7 +142,8 @@ Nav Area Style
   padding-right: 0px;
 }
 
-.main-menu .navigation > li.active > a {
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li:hover > a{
   color: #d43c2f;
 }
 
@@ -163,10 +164,7 @@ Nav Area Style
   transform: scale(1,1);
 }
 
-.main-menu .navigation > li.current > a,
-.main-menu .navigation > li:hover > a{
-  color: #d43c2f;
-}
+
 
 .main-menu .navigation > li > ul,
 .main-menu .navigation > li > .megamenu{

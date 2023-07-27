@@ -148,22 +148,22 @@
                         </div>
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation navbar-nav clearfix">
-                                <li [class.active]="activeMenuItem === 'home'">
+                                <li [class.current]="activeMenuItem === 'home'">
                                     <a routerLink="/home" routerLinkActive="active">Home</a>
                                 </li> 
-                                <li [class.active]="activeMenuItem === 'about'">
+                                <li [class.current]="activeMenuItem === 'about'">
                                     <a routerLink="/about" routerLinkActive="active">About Us</a>
                                 </li>
-                                <li [class.active]="activeMenuItem === 'services'">
+                                <li [class.current]="activeMenuItem === 'services'">
                                     <a routerLink="/services" routerLinkActive="active">Services</a>
                                 </li>
-                                <li [class.active]="activeMenuItem === 'portfolio'">
+                                <li [class.current]="activeMenuItem === 'portfolio'">
                                     <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
                                 </li>
-                                <li [class.active]="activeMenuItem === 'contact'">
+                                <li [class.current]="activeMenuItem === 'contact'">
                                     <a routerLink="/contact" routerLinkActive="active">Contact</a>
                                 </li>
-                                <li [class.active]="activeMenuItem === 'hierarchy'">
+                                <li [class.current]="activeMenuItem === 'hierarchy'">
                                     <a routerLink="/hierarchy" routerLinkActive="active">Hierarchy</a>
                                 </li>
                             </ul>

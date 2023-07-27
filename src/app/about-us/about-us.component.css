@@ -158,3 +158,22 @@ Page Title Area Style
   bottom: -30px;
   border-radius: 4px
 }
+
+.company-area .company-img {
+  display: block;
+}
+
+.company-area .res-company-img {
+  display: none;
+}
+
+@media only screen and (max-width:991px) {
+  .company-area .company-img {
+    display: none;
+  }
+
+  .company-area .res-company-img {
+    display: block;
+  }
+
+}

@@ -78,3 +78,8 @@
     display: block;
   }
   
+  @media only screen and (max-width: 767px) {
+    .get-quat-list-tab .get-quat-img {
+      margin: 50px 0;
+    }
+  }
