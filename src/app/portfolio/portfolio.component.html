@@ -17,107 +17,23 @@
 
 <!-- Our Portfolio Start -->
 <section class="ptb-100">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/48584.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="https://ncfnepal.com.np/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/56342.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="https://www.cosys.com.np/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/38859.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="https://dcul.coop.np/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/29050.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="http://jagannathmavibhumahi.com/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/49483.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="https://nawasrijanshil.com/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/15259.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="https://sunrisesaving.com.np/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-            
-            <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="preview-item image-with-text">                        
-                    <div class="preview-image">
-                      <img src="assets/images/portfolio/67399.png" alt="/" class="img-fluid">
-                    </div>
-                                                    
-                    <div class="hover-content">
-                      <div class="hover-inner-content">
-                        <h5 class="hover-title"><a href="https://kmcl.coop.np/" target="_blank">Portfolio <i class="bx bx-link-alt"></i></a></h5>
-                      </div>
-                    </div>
-                </div><!-- End Preview box -->
-            </div>
-                    </div>
+  <div class="container">
+    <div class="row">
+        
+      <div class="col-lg-4 col-sm-6 col-xs-12 preview-box wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms" *ngFor="let portfolio of portfolioData">
+          <div class="preview-item image-with-text">                        
+              <div class="preview-image">
+                <img src="{{imageUrl}}/portfolio/{{portfolio.image}}" alt="/" class="img-fluid">
+              </div>
+                                              
+              <div class="hover-content">
+                <div class="hover-inner-content">
+                  <h5 class="hover-title"><a href="{{portfolio.url}}" target="_blank">{{ portfolio.site_name }} <i class="bx bx-link-alt"></i></a></h5>
+                </div>
+              </div>
+          </div><!-- End Preview box -->
+      </div>
     </div>
+  </div>
 </section>
 <!-- Our Portfolio End -->

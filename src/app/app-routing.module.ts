@@ -11,6 +11,7 @@ import { HierarchyComponent } from './hierarchy/hierarchy.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
   { path: 'home', component: HomePageComponent},
   { path: 'about', component: AboutUsComponent },
   { path: 'contact', component: ContactUsComponent },

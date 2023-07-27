@@ -6,7 +6,7 @@
                     <div class="footer-content logo-footer">
                         <div class="footer-head">
                             <div class="footer-logo">
-                                <div [routerLink]="'/home'"><img src="assets/images/pioneer-logo.png" alt="Pioneer Logo"></div>
+                                <div [routerLink]="'/home'" style="cursor: pointer;"><img src="assets/images/pioneer-logo.png" alt="Pioneer Logo"></div>
                             </div>
                             <p>
                                 Pioneer Associate mission is to help our customers be more productive and efficient by offering professional and affordable Web Design services to compliment the client's marketing and cost containment.
@@ -20,12 +20,12 @@
                         <div class="footer-head">
                             <h4>Links</h4>
                             <ul class="footer-list">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our services </a></li>
+                                <li><a routerLink="/about">About Us</a></li>
+                                <li><a routerLink="/services">Our services </a></li>
                             </ul>
                             <ul class="footer-list hidden-sm">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li><a routerLink="/contact">Contact</a></li>
+                                <li><a routerLink="/portfolio">Portfolio</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <ul>
                         <li>
-                            <a href="/privacy-policy">Privacy Policy</a>
+                            <a routerLink="/privacy-policy">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>

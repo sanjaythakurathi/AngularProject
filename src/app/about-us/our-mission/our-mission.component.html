@@ -1,14 +1,14 @@
 <section class="commitment-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 d-flex">
+    <div class="container" *ngIf="aboutUsData && aboutUsData.length > 0">
+        <div class="row" *ngFor="let data of aboutUsData">
+            <div class="col-lg-3 col-md-6 d-flex" >
                 <div class="card-item wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="card-icon">
                         <i class="flaticon-clipboard"></i>
                     </div>
                     <div class="card-body">
                         <h3>Our Mission</h3>
-                        <p>Achieve our objectives in an environment of honesty towards our clients, with the help of our highly skilled team, gives emphasis on quality.</p>
+                        <div [innerHTML]="data.mission | removePTag"></div>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="card-body">
                         <h3>Our Vision</h3>
-                        <p>To be one of the respected and leading financial corporations with leveraging technology in finance sector digitally to provide payment gateway services</p>
+                        <div [innerHTML]="data.vision | removePTag"></div>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,8 @@
                     </div>
                     <div class="card-body">
                         <h3>Core Values</h3>
-                        <p>We work in the green finance sector and automate our services on our websites and mobile apps to give you with the greatest online experience possible.</p>
+                        <div [innerHTML]="data.core_values | removePTag"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
                     </div>
                     <div class="card-body">
                         <h3>Goals</h3>
-                        <p>The primary purpose of a business is to maximize profits for its owners or shareholders while maintaining corporate social responsibility.</p>
+                        <div [innerHTML]="data.objective | removePTag"></div>
                     </div>
                 </div>
             </div>

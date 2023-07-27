@@ -18,22 +18,21 @@
 <!-- Start About Area -->
 <section class="company-area">
   <div class="container" *ngIf="aboutUsData">
-      <div class="row align-items-center">
+      <div class="row align-items-center" *ngFor="let aboutus of aboutUsData">
           <div class="col-lg-6 col-md-12">
               <div class="company-content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                  <div class="company-content" *ngFor="let item of aboutUsData">
-                    
+                  <div class="company-content" >
 
-                    <span>About Us</span>
-                    <h2>{{ item.title }}</h2>
-                    <div [innerHTML]="item.introduction | removePTag"></div>
+                    <!-- <span>About Us</span> -->
+                    <h2>{{ aboutus.title }}</h2>
+                    <div [innerHTML]="aboutus.introduction | removePTag"></div>
                                         
                   </div>
               </div>
           </div>
           <div class="col-lg-6 col-md-12">
               <div class="company-img">
-                  <img src="assets/images/about-img-6.jpg" alt="company">
+                  <img src="{{imageUrl}}/aboutus_images/{{ aboutus.image }}" alt="company">
               </div>
           </div>
       </div>

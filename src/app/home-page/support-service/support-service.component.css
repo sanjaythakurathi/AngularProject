@@ -1,3 +1,5 @@
+@import "primeicons/primeicons.css";
+
 .support_box_wrap {
     display: flex;
     align-items: center;
@@ -60,7 +62,8 @@
     border-radius: 50%;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
     color: #003e84;
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: 600;
     margin-right: 15px;
   }
   .support_image .video_icon {

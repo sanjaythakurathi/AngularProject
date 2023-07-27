@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import  {environment} from '../environments/envi'; // Import the environment
 
 type OurTeamResponse= {
-  ourteam: {
+  data: {
     id:string;
     title:string;
     category:string;
@@ -13,17 +13,39 @@ type OurTeamResponse= {
     youtube:string;
     linkedin:string;
     image:string;
-    created_at:string;
-    updated_at:string;
     //[key:string ]:string
   }[];
 }
 
 type AboutUsResponse= {
-  aboutus: {
+  data: {
   id:string;
   title:string;
-  description:string;
+  introduction:string;
+  image:string;
+  mission:string;
+  vision:string;
+  objective:string;
+  core_values:string;
+  }[];
+}
+
+type portfolioResponse= {
+  data: {
+    id: string;
+    url: string;
+    image: string;
+    site_name:string;
+  }[];
+}
+
+
+type serviceResponse= {
+  data: {
+    id: string;
+    title: string;
+    description: string;
+    icon_name: string;
   }[];
 }
 
@@ -55,6 +77,14 @@ export class ApiDataService {
 
   getOurTeamData(): Observable<OurTeamResponse> {
     return this.http.get<OurTeamResponse>(`${this.apiUrl}/ourteam`, { headers: this.getHeaders() });
+  }
+
+  getportfolioData(): Observable<portfolioResponse> {
+    return this.http.get<portfolioResponse>(`${this.apiUrl}/portfolio`, { headers: this.getHeaders() });
+  }
+
+  getserviceData(): Observable<serviceResponse> {
+    return this.http.get<serviceResponse>(`${this.apiUrl}/ourservice`, { headers: this.getHeaders() });
   }
 
   // Function to perform the POST request
