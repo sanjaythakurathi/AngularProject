@@ -133,7 +133,7 @@
                     <span>ISO 9001 : 2015 Accredited</span>
                 </div>
                 <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler" (click)="toggleMobileMenu()">
+                <div class="mobile-nav-toggler" (click)="toggleMobileMenu()" [class.active]="isMobileMenuVisible">
                     <i class="icon-bar"></i>
                     <i class="icon-bar"></i>
                     <i class="icon-bar"></i>
@@ -181,4 +181,5 @@
 </header>
 
 <!-- Mobile Menu  -->
-<app-mobile-menu *ngIf="isMobileMenuVisible"></app-mobile-menu>
+<!-- <app-mobile-menu *ngIf="isMobileMenuVisible"></app-mobile-menu> -->
+<app-mobile-menu [mobileMenuContent]="mobileMenuContent"></app-mobile-menu>

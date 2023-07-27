@@ -12,6 +12,7 @@ export class AppBarComponent  {
   activeMenuItem: string = '/home';
   isMobileMenuVisible: boolean = false;
   items: MenuItem[] = [];
+  mobileMenuContent: string = ''; // Define the variable to hold the menu content
 
   constructor(private router: Router, private renderer: Renderer2) {
     this.router.events.subscribe(event => {
@@ -60,11 +61,20 @@ export class AppBarComponent  {
   }
 
   toggleMobileMenu() {
-    this.isMobileMenuVisible =  true;
+    this.isMobileMenuVisible = !this.isMobileMenuVisible;
     if (this.isMobileMenuVisible) {
+      this.copyMenuContentToMobileMenu();
       this.renderer.addClass(document.body, 'mobile-menu-visible');
     } else {
       this.renderer.removeClass(document.body, 'mobile-menu-visible');
+    }
+  }
+
+  copyMenuContentToMobileMenu() {
+    // Copy the main menu content to the mobile menu
+    const mainMenu = document.querySelector('.header-area .menu-area .main-menu');
+    if (mainMenu) {
+      this.mobileMenuContent = mainMenu.innerHTML;
     }
   }
   

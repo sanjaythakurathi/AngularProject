@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, AfterViewInit, Input, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-menu',
@@ -6,10 +6,9 @@ import { Component, AfterViewInit, ViewChild, ElementRef, Renderer2 } from '@ang
   styleUrls: ['./mobile-menu.component.css']
 })
 export class MobileMenuComponent implements AfterViewInit {
+  @Input() mobileMenuContent: string = '';
   isMobileMenuVisible: boolean = false;
-  mobileMenuContent: string = '';
 
-  @ViewChild('mobileMenu') mobileMenuRef!: ElementRef;
 
   constructor(private renderer: Renderer2) {}
 
