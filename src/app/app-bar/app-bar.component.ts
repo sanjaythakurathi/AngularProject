@@ -43,25 +43,25 @@ export class AppBarComponent  {
       }
     });
 
-    if (url.includes('/home')) {
-      this.activeMenuItem = 'home';
-    } else if (url.includes('/about')) {
-      this.activeMenuItem = 'about';
-    } else if (url.includes('/services')) {
-      this.activeMenuItem = 'services';
-    } else if (url.includes('/portfolio')) {
-      this.activeMenuItem = 'portfolio';
-    } else if (url.includes('/contact')) {
-      this.activeMenuItem = 'contact';
-    } else if (url.includes('/hierarchy')) {
-      this.activeMenuItem = 'hierarchy';
-    } else {
-      this.activeMenuItem = '/';
-    }
+    // if (url.includes('/home')) {
+    //   this.activeMenuItem = 'home';
+    // } else if (url.includes('/about')) {
+    //   this.activeMenuItem = 'about';
+    // } else if (url.includes('/services')) {
+    //   this.activeMenuItem = 'services';
+    // } else if (url.includes('/portfolio')) {
+    //   this.activeMenuItem = 'portfolio';
+    // } else if (url.includes('/contact')) {
+    //   this.activeMenuItem = 'contact';
+    // } else if (url.includes('/hierarchy')) {
+    //   this.activeMenuItem = 'hierarchy';
+    // } else {
+    //   this.activeMenuItem = '/';
+    // }
   }
 
   toggleMobileMenu() {
-    this.isMobileMenuVisible = !this.isMobileMenuVisible;
+    this.isMobileMenuVisible = true;
     if (this.isMobileMenuVisible) {
       this.copyMenuContentToMobileMenu();
       this.renderer.addClass(document.body, 'mobile-menu-visible');

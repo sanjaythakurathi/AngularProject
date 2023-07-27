@@ -185,6 +185,6 @@ transition: 0.4s;
 .single-service:hover .service-content h4{
   color:#fff;
 }
-.single-service:hover .service-content p{
+.single-service:hover .service-content h4 + div{
   color:#ddd;
 }
