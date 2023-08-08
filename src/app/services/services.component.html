@@ -18,18 +18,13 @@
 <!-- Our Services Start -->
 <section class="our-services-section ptb-100">
   <div class="container">
-      <!-- <div class="section-title sec_title-two">
-          <span>Smart services</span>
-          <h2>Provide All Kind Of Tech Solutions</h2>
-          <p>We help agencies to define their new business objectives and then create the road map</p>
-      </div> -->
       <div class="row">
           
           <!-- single dervices -->
           <div class="col-lg-4 col-sm-6 col-xs-12 d-flex" *ngFor="let ourservice of serviceData">
               <div class="single-service wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                   <div class="service-icon">
-                      <i class="flaticon-project-plan"></i>
+                    <i class="{{ ourservice.icon_name }}"></i>
                   </div>
                   <div class="service-inner">
                       <div class="service-content">
@@ -41,7 +36,6 @@
               </div>
           </div>
           <!-- single dervices -->
-          
       </div>
   </div>
 </section>
