@@ -34,6 +34,7 @@ import { AboutAreaComponent } from './home-page/about-area/about-area.component'
 import { HomeServiceComponent } from './home-page/home-service/home-service.component';
 import { HomeTabComponent } from './home-page/home-tab/home-tab.component';
 import { MainBannerComponent } from './home-page/main-banner/main-banner.component';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { MainBannerComponent } from './home-page/main-banner/main-banner.compone
     AboutAreaComponent,
     HomeServiceComponent,
     HomeTabComponent,
-    MainBannerComponent
+    MainBannerComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,

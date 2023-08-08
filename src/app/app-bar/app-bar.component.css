@@ -81,6 +81,28 @@ Header Top Area
   color: #ffffff;
 }
 
+@media only screen and (max-width: 767px) {
+  .header-area .top-header-area {
+    background-color: #ffffff;
+  }
+  .header-area .top-header-area .header-content-right {
+    float: unset;
+  }
+  .header-area .top-header-area .header-content-right li {
+    padding-right: 0;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .header-area .top-header-area .header-content-right li:last-child {
+    margin-bottom: 0;
+  }
+  .header-area .top-header-area .header-content-left p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+}
+
+
 /*
 Nav Area Style
 ======================================================*/
